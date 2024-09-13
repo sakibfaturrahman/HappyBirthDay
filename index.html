@@ -451,13 +451,6 @@
       });
     </script>
 
-<script>
-  // Fungsi untuk scroll ke section About
-  function scrollToAbout() {
-    const aboutSection = document.getElementById("about");
-    aboutSection.scrollIntoView({ behavior: "smooth" }); // Scroll halus
-  }
-</script>
 
 <script>
   const aboutSection = document.getElementById('about');
@@ -465,6 +458,11 @@
   const overlay = document.querySelector('.popup-overlay');
   const music = document.getElementById('music');
   let hasShownPopup = false;
+
+  function scrollToAbout() {
+    const aboutSection = document.getElementById("about");
+    aboutSection.scrollIntoView({ behavior: "smooth" }); // Scroll halus
+  }
 
   // Deteksi scroll sampai ke section "about"
   window.addEventListener('scroll', function() {
